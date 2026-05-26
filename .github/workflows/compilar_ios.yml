@@ -26,4 +26,4 @@ jobs:
 
       - name: 4. Compilar Framework Nativo de iOS
         # Este comando le ordena a la Mac virtual compilar tu código de commonMain hacia el procesador de Apple
-        run: ./gradlew :app:shared:compileFrameworkIosX64
+        run: ./gradlew :app:shared:iosX64MainBinaries :app:shared:iosArm64MainBinaries --stacktrace
