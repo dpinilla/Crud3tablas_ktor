@@ -73,7 +73,7 @@ kotlin {
             /*
              Navigation
              */
-            implementation("org.jetbrains.androidx.navigation:navigation-compose:2.8.0-alpha10") // Versión oficial multiplataforma
+            implementation("org.jetbrains.androidx.navigation:navigation-compose:2.8.0 ") // Versión oficial multiplataforma
 
 
         }
