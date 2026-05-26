@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">crud3tablas_ktor</string>
+    <string name="cedula">"Cédula: "</string>
+    <string name="nombre">Nombre:</string>
+    <string name="edad">Edad:</string>
+    <string name="eventoCliente">CLIENTES</string>
+    <string name="eventoProducto">PRODUCTO</string>
+    <string name="tituloCliente">LISTADO DE CLIENTES</string>
+    <string name="tituloProducto">LISTADO DE PRODUCTOS</string>
+    <string name="guardar">GUARDAR</string>
+    <string name="tituloInsertar">INSERTAR</string>
+    <string name="tituloDetalle">DETALLE DEL CLIENTE</string>
+    <string name="cerrar">Cerrar</string>
+    <string name="modificar">MODIFICAR CLIENTES</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="tituloAlertCliente">Eliminar Cliente</string>
+    <string name="descripcionAlertCliente">Desea Eliminar el Cliente?</string>
+    <string name="confirmaEliminarCliente">ELIMINAR</string>
+    <string name="calcelaEliminarCliente">CANCELAR</string>
+    <string name="toastGuardar">Registro guardado</string>
+    <string name="toastErrorGuardar">Error al guardar</string>
+    <string name="toastModificar">Registro modificado</string>
+    <string name="toastErrorModificar">Error al modificar</string>
+    <string name="toastEliminar">Registro eliminado</string>
+    <string name="toastErrorEliminar">Error al eliminar</string>
+</resources>

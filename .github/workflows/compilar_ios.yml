@@ -1,0 +1,29 @@
+name: Validacion de Compilacion iOS (CRUD)
+on:
+  push:
+    branches: [ main, master ] # Se activa automáticamente al subir código a estas ramas
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build-ios:
+    name: Compilar Binarios de iPhone en la Nube
+    runs-on: macos-latest # GitHub nos presta una Mac con Xcode integrado gratis
+
+    steps:
+      - name: 1. Descargar Codigo de la Clase
+        uses: actions/checkout@v4
+
+      - name: 2. Configurar Entorno Java (JDK 17)
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+          cache: 'gradle' # Guarda la caché para que la siguiente compilación sea veloz
+
+      - name: 3. Otorgar permisos de ejecucion a Gradle
+        run: chmod +x gradlew
+
+      - name: 4. Compilar Framework Nativo de iOS
+        # Este comando le ordena a la Mac virtual compilar tu código de commonMain hacia el procesador de Apple
+        run: ./gradlew :shared:compileFrameworkIosX64
